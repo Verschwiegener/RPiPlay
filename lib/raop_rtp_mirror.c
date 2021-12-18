@@ -433,7 +433,7 @@ raop_rtp_mirror_thread(void *arg)
 void
 raop_rtp_start_mirror(raop_rtp_mirror_t *raop_rtp_mirror, int use_udp, unsigned short *mirror_data_lport)
 {
-    logger_log(raop_rtp_mirror->logger, LOGGER_INFO, "raop_rtp_mirror starting mirroring " + mirror_data_lport);
+    logger_log(raop_rtp_mirror->logger, LOGGER_INFO, "raop_rtp_mirror starting mirroring = %hu", mirror_data_lport);
     int use_ipv6 = 0;
 
     assert(raop_rtp_mirror);
